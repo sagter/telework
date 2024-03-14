@@ -1,0 +1,29 @@
+{
+  "name": "demo1",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/demo1/src",
+  "projectType": "library",
+  "tags": ["demo1"],
+  "targets": {
+    "build": {
+      "executor": "@nx/rollup:rollup",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/demo1",
+        "tsConfig": "packages/demo1/tsconfig.lib.json",
+        "project": "packages/demo1/package.json",
+        "entryFile": "packages/demo1/src/index.ts",
+        "external": ["react", "react-dom", "react/jsx-runtime"],
+        "rollupConfig": "@nx/react/plugins/bundle-rollup",
+        "compiler": "babel",
+        "assets": [
+          {
+            "glob": "packages/demo1/README.md",
+            "input": ".",
+            "output": "."
+          }
+        ]
+      }
+    }
+  }
+}
