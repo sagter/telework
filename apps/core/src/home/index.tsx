@@ -9,6 +9,13 @@ export const Demo1 = createDynamicComponent(
   },
   { ssr: true }
 );
+export const Demo2 = createDynamicComponent(
+  {
+    name: "demo2",
+    getModule: () => import("@telework/demo2"),
+  },
+  { ssr: true }
+);
 
 const Home = (props) => {
   return (
@@ -22,6 +29,7 @@ const Home = (props) => {
       <p>props: {JSON.stringify(props)}</p>
       <h1>Demo1 subapp as a dynamic component in Home</h1>
       <Demo1 />
+      <Demo2 />
     </div>
   );
 };

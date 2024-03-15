@@ -50,15 +50,16 @@ const mapStateToProps = (state) => {
 };
 
 export const subapp: ReactSubApp = {
-  Component: connect(mapStateToProps, (dispatch) => ({ dispatch }))(Demo2),
-  wantFeatures: [
-    reduxFeature({
-      React,
-      shareStore: true,
-      reducers: true, // true => read the reduxReducers export from this file
-      prepare: async (initialState) => {
-        return { initialState: initialState || { number: { value: 999 } } };
-      },
-    }),
-  ],
+  Component: Demo2,
+  // Component: connect(mapStateToProps, (dispatch) => ({ dispatch }))(Demo2),
+  // wantFeatures: [
+  //   reduxFeature({
+  //     React,
+  //     shareStore: true,
+  //     reducers: true, // true => read the reduxReducers export from this file
+  //     prepare: async (initialState) => {
+  //       return { initialState: initialState || { number: { value: 999 } } };
+  //     },
+  //   }),
+  // ],
 };

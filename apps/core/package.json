@@ -27,7 +27,8 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.24.0",
-    "@telework/demo1": "^0.0.1"
+    "@telework/demo1": "^0.0.1",
+    "@telework/demo2": "^0.0.1"
   },
   "devDependencies": {
     "@xarc/app-dev": "^11.0.8"
