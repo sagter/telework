@@ -16,7 +16,8 @@
     "baseUrl": ".",
     "paths": {
       "@telework/demo1": ["packages/demo1/src/index.ts"],
-      "@telework/demo2": ["packages/demo2/src/index.ts"]
+      "@telework/demo2": ["packages/demo2/src/index.ts"],
+      "@telework/demo3": ["packages/demo3/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

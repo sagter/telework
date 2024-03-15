@@ -8,6 +8,8 @@ import { Route, Routes, Link } from 'react-router-dom';
 import { Demo1 } from '@telework/demo1';
 import { Demo2 } from '@telework/demo2';
 
+import { Demo3 } from '@telework/demo3';
+
 export function App() {
   return (
     <div>
@@ -23,6 +25,9 @@ export function App() {
         <ul>
           <li>
             <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/demo3">Demo3</Link>
           </li>
           <li>
             <Link to="/demo2">Demo2</Link>
@@ -44,6 +49,7 @@ export function App() {
             </div>
           }
         />
+        <Route path="/demo3" element={<Demo3 />} />
         <Route path="/demo2" element={<Demo2 />} />
         <Route path="/demo1" element={<Demo1 />} />
         <Route
