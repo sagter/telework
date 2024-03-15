@@ -5,7 +5,7 @@ import { message } from "./message";
 export const Demo1 = createDynamicComponent(
   {
     name: "demo1",
-    getModule: () => import("../demo1"),
+    getModule: () => import("@telework/demo1"),
   },
   { ssr: true }
 );

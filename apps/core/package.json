@@ -26,7 +26,8 @@
     "start": "node lib/server"
   },
   "dependencies": {
-    "@babel/runtime": "^7.24.0"
+    "@babel/runtime": "^7.24.0",
+    "@telework/demo1": "^0.0.1"
   },
   "devDependencies": {
     "@xarc/app-dev": "^11.0.8"

@@ -3368,11 +3368,12 @@ __metadata:
   resolution: "@telework/core@workspace:apps/core"
   dependencies:
     "@babel/runtime": "npm:^7.24.0"
+    "@telework/demo1": "npm:^0.0.1"
     "@xarc/app-dev": "npm:^11.0.8"
   languageName: unknown
   linkType: soft
 
-"@telework/demo1@workspace:packages/demo1":
+"@telework/demo1@npm:^0.0.1, @telework/demo1@workspace:packages/demo1":
   version: 0.0.0-use.local
   resolution: "@telework/demo1@workspace:packages/demo1"
   languageName: unknown
