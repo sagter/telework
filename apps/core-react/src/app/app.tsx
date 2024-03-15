@@ -6,6 +6,7 @@ import NxWelcome from './nx-welcome';
 import { Route, Routes, Link } from 'react-router-dom';
 
 import { Demo1 } from '@telework/demo1';
+import { Demo2 } from '@telework/demo2';
 
 export function App() {
   return (
@@ -24,6 +25,9 @@ export function App() {
             <Link to="/">Home</Link>
           </li>
           <li>
+            <Link to="/demo2">Demo2</Link>
+          </li>
+          <li>
             <Link to="/demo1">Demo1</Link>
           </li>
           <li>
@@ -40,6 +44,7 @@ export function App() {
             </div>
           }
         />
+        <Route path="/demo2" element={<Demo2 />} />
         <Route path="/demo1" element={<Demo1 />} />
         <Route
           path="/page-2"
