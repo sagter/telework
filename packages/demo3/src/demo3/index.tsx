@@ -13,7 +13,7 @@ import { copyRightMessage } from "../info";
 import { DisplayInfo } from "./display-info";
 
 const Demo3 = () => {
-  const { data } = useQuery("demo3", demo3QueryFn, { staleTime: 2000 });
+  // const { data } = useQuery("demo3", demo3QueryFn, { staleTime: 2000 });
 
   return (
     <div>
@@ -27,7 +27,7 @@ const Demo3 = () => {
         }}
       >
         <h2>subapp demo3 with react-query</h2>
-        data: <pre>{JSON.stringify(data)}</pre>
+        {/* data: <pre>{JSON.stringify(data)}</pre> */}
         <DisplayInfo />
       </div>
       <p style={{ textAlign: "center" }}>{copyRightMessage}</p>
@@ -37,10 +37,10 @@ const Demo3 = () => {
 
 export const subapp: ReactSubApp = {
   Component: Demo3,
-  wantFeatures: [
-    reactQueryFeature({
-      React,
-      serverModule: require.resolve("./react-query-fetch"),
-    }),
-  ],
+  // wantFeatures: [
+  //   reactQueryFeature({
+  //     React,
+  //     serverModule: require.resolve("./react-query-fetch"),
+  //   }),
+  // ],
 };

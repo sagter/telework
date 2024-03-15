@@ -5,9 +5,4 @@ export const home = declareSubApp({
   getModule: () => import("./home"),
 });
 
-export const Demo3 = declareSubApp({
-  name: "demo3",
-  getModule: () => import("./demo3"),
-});
-
 xarcV2.debug("app.tsx");
