@@ -11,7 +11,7 @@ export async function fastifyPlugin(server: ElectrodeFastifyInstance) {
   const homeRenderer: PageRenderer = new PageRenderer({
     pageTitle: "xarc React App demo",
     subApps: [
-      { name: home.name, ssr: true },
+      { name: home.name, ssr: false },
     ],
     prodAssetData: {
       cdnMap: "config/assets.json",
