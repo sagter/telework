@@ -1,4 +1,4 @@
-import { Demo2, Demo3, home } from "../app";
+import { layout, home } from "../app";
 import { PageRenderer } from "@xarc/react";
 import { ElectrodeFastifyInstance } from "@xarc/fastify-server";
 /**
@@ -8,12 +8,10 @@ import { ElectrodeFastifyInstance } from "@xarc/fastify-server";
  * @returns nothing
  */
 export async function fastifyPlugin(server: ElectrodeFastifyInstance) {
-  const homeRenderer: PageRenderer = new PageRenderer({
+  const layoutRenderer: PageRenderer = new PageRenderer({
     pageTitle: "xarc React App demo",
     subApps: [
-      { name: home.name, ssr: true },
-      { name: Demo2.name, ssr: true },
-      { name: Demo3.name, ssr: true },
+      { name: layout.name, ssr: false },
     ],
     prodAssetData: {
       cdnMap: "config/assets.json",
@@ -25,7 +23,7 @@ export async function fastifyPlugin(server: ElectrodeFastifyInstance) {
     url: "/",
     async handler(request, reply) {
       try {
-        const context = await homeRenderer.render({ request });
+        const context = await layoutRenderer.render({ request });
         reply.type("text/html");
 
         if (context.user.cspHeader) {
