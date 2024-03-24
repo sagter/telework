@@ -170,15 +170,15 @@ const Home = (props) => {
             className="d-flex flex-column flex-shrink-0 bg-body-tertiary position-fixed"
             style={{ width: '4rem' }}
           >
-            <ul className="nav nav-pills nav-flush flex-column mb-auto text-center">
+            <ul role="tablist" className="nav nav-pills nav-flush flex-column mb-auto text-center">
               <li className="nav-item">
                 <a
                   href="#"
                   className="nav-link active py-3 border-bottom rounded-0"
                   aria-current="page"
                   title="Home"
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="right"
+                  data-bs-toggle="tab"
+                  
                 >
                   <svg className="bi pe-none" width="24" height="24" role="img" aria-label="Home">
                     <use xlinkHref="#home" />
@@ -190,8 +190,8 @@ const Home = (props) => {
                   href="#"
                   className="nav-link py-3 border-bottom rounded-0"
                   title="Dashboard"
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="right"
+                  data-bs-toggle="tab"
+                  
                 >
                   <svg
                     className="bi pe-none"
@@ -209,8 +209,8 @@ const Home = (props) => {
                   href="#"
                   className="nav-link py-3 border-bottom rounded-0"
                   title="Orders"
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="right"
+                  data-bs-toggle="tab"
+                  
                 >
                   <svg className="bi pe-none" width="24" height="24" role="img" aria-label="Orders">
                     <use xlinkHref="#table" />
@@ -222,8 +222,8 @@ const Home = (props) => {
                   href="#"
                   className="nav-link py-3 border-bottom rounded-0"
                   title="Products"
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="right"
+                  data-bs-toggle="tab"
+                  
                 >
                   <svg
                     className="bi pe-none"
@@ -241,8 +241,8 @@ const Home = (props) => {
                   href="#"
                   className="nav-link py-3 border-bottom rounded-0"
                   title="Customers"
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="right"
+                  data-bs-toggle="tab"
+                  
                 >
                   <svg
                     className="bi pe-none"
